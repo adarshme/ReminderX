@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setImageResource(R.drawable.ic_add_red_24dp);
-        fab.setBackgroundColor(Color.parseColor("#ff0000"));
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
