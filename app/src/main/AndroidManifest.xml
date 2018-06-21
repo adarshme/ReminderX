@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewReminder"></activity>
+        <activity android:name=".NewReminder"
+            android:label="@string/NewReminder">
+        </activity>
     </application>
 
 </manifest>
