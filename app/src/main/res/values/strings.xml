@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ReminderX</string>
+    <string name="WelText">Add a reminder by pressing the + button in the bottom right corner</string>
     <string name="action_settings">Settings</string>
     <string name="NewReminder">New Reminder</string>
     <string name="RemHeadingHint">Heading</string>
