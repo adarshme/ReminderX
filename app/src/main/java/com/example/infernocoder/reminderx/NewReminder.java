@@ -1,12 +1,15 @@
 package com.example.infernocoder.reminderx;
 
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -42,5 +45,20 @@ public class NewReminder extends AppCompatActivity {
         }, hour, minute, false);//No 24 hour time
         mTimePicker.setTitle("Select Time");
         mTimePicker.show();
+    }
+
+    EditText Heading;
+
+    public void addReminder(View view){
+        Heading = findViewById(R.id.Heading);
+        PickTime = findViewById(R.id.PickTime);
+
+        String ToastMessage = "Added " + Heading.getText().toString() + " for " + PickTime.getText();
+
+        Toast.makeText(getBaseContext(), ToastMessage,
+                Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(NewReminder.this, MainActivity.class);
+        startActivity(intent);
     }
 }

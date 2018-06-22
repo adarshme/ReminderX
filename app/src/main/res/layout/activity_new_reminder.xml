@@ -51,7 +51,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="15dp"
             android:text="@string/AddRem"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="addReminder"/>
     </LinearLayout>
 
 </LinearLayout>
