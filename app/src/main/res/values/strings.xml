@@ -3,5 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="NewReminder">New Reminder</string>
     <string name="RemHeadingHint">Heading</string>
-    <string name="PickTime">Pick Time</string>
+    <string name="PickTime">Time</string>
+    <string name="AddRem">Add Reminder</string>
 </resources>
