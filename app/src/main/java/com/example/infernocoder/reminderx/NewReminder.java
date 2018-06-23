@@ -3,7 +3,6 @@ package com.example.infernocoder.reminderx;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,14 +23,14 @@ public class NewReminder extends AppCompatActivity {
         welcomeSnackBar();
     }
 
-    public void welcomeSnackBar(){
+    public void welcomeSnackBar() {
         Snackbar.make(getWindow().getDecorView().getRootView(), "Add a new reminder", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();
     }
 
     Button PickTime;
 
-    public void timeDialog(View v){
+    public void timeDialog(View v) {
         Calendar mcurrentTime = Calendar.getInstance();
         PickTime = findViewById(R.id.PickTime);
         int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
@@ -50,7 +49,7 @@ public class NewReminder extends AppCompatActivity {
 
     EditText Heading;
 
-    public void addReminder(View view){
+    public void addReminder(View view) {
         Heading = findViewById(R.id.Heading);
         PickTime = findViewById(R.id.PickTime);
 
